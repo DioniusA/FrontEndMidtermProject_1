@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Portfolio: Aldiyar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="container">
+        <div class="pseudoHeader"></div>
+        <header class="sideHeader">
+            <h1>
+                I'm <a href="index.html">Dinislam Aldiyar</a> — <br>
+                a computer science 
+                student and a novice 
+                front-end developer.
+            </h1>
+            <nav>
+                <ul>
+                    <li class="active-menu"><a href="index.html">Home<span> ✼ </span></a></li>
+                    <li><a href="family.html">Family</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="mobileHeader">
+            <p>
+                <a href="index.html">Dinislam Aldiyar</a> <br>
+                _<span>home</span>_
+            </p>
+            <div class="mobile-menu">
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">&#9776;</label>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="family.html">Family</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="hobbies.html">Hobbies</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>            
+        </div>            
+        <div class="home">
+            <div class="about-me">
+                <h1>Hello, I'm Aldiyar 👋</h1> 
+                <br>
+                <h2>About Me</h2> 
+                <p> 
+                    I was born on September 1, 2005, 
+                    and have always had a passion for sports, 
+                    particularly speed skating, boxing, and swimming. 
+                    This early interest in athletics instilled 
+                    in me the values of discipline and perseverance. 
+                </p> 
+                <h2>Education</h2> 
+                <p> Currently, I am a second-year 
+                    student in the Faculty of Computer Science at SDU.
+                    I chose this field after discovering my passion for programming during my teenage years.
+                </p> 
+                <h2>Professional Experience</h2> 
+                <p> I wrote my first front-end website three years ago, 
+                    and since then, I have worked on several exciting projects. 
+                    My portfolio includes: <br>
+                    1. A meme website. <br>
+                    2. A website for a pizzeria. <br>
+                    3. A personal portfolio showcasing my work. <br>
+                    4. And this Midterm Project.
+                </p>
+                <h2>Looking Forward</h2> 
+                <p> I am eager to continue my journey in computer science, 
+                    explore new opportunities in technology, 
+                    and collaborate with others in the field. 
+                </p>
+            </div>
+        </div>
+        <nav class="sideBar">
+            <div class="side-quote">
+                <b id="word"></b>
+            </div>
+        </nav>
+    </section>
+    <script>
+        window.onload = function() {
+            generate();
+        };
+        function generate() {
+            var arr = [
+                'The only true wisdom is in knowing you know nothing.',
+                'Gott ist tot. Gott bleibt tot. Und wir haben ihn getötet.',
+                'Немає любові до життя без відчаю в житті.',
+                'لقد كان في وسعي أن أقضي على كل يهود العالم ولكني تركت بعضا منهم لتعرفوا لماذا كنت أبيدهم',
+                'La muerte es la solución a todos los problemas. No hay problema para nadie.',
+                'Solo uno sciocco impara dai propri errori.',
+                'IwbnfouevcmsiehwvudbqvGovernment.'
+            ];
+            var index = Math.floor(Math.random() * arr.length);
+            document.getElementById('word').innerHTML = arr[index];
+        }
+    </script>        
+</body>
+</html>

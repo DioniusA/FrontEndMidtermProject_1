@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Portfolio: Aldiyar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="container">
+        <div class="pseudoHeader"></div>
+        <header class="sideHeader">
+            <h1>
+                I'm <a href="index.html">Dinislam Aldiyar</a> —<br>
+                a computer science 
+                student and a novice 
+                front-end developer.
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active-menu"><a href="family.html">Family<span> ✼ </span></a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="mobileHeader">
+            <p>
+                <a href="index.html">Dinislam Aldiyar</a> <br>
+                _<span>family</span>_
+            </p>
+            <div class="mobile-menu">
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">&#9776;</label>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="family.html">Family</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="hobbies.html">Hobbies</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>            
+        </div>            
+        <div class="family">
+            <h2>My Family</h2>
+            <div class="family-grid">
+                <div class="family-member">
+                    <img src="/assets/Dad.png" alt="Father">
+                    <h3>Father</h3>
+                    <p>My father is a dedicated and hardworking man who has always supported me in all my endeavors.</p>
+                </div>
+                <div class="family-member">
+                    <img src="/assets/Mom.png" alt="Mother">
+                    <h3>Mother</h3>
+                    <p>My mother is my biggest inspiration. She is caring, compassionate, and always there for me.</p>
+                </div>
+                <div class="family-member">
+                    <img src="/assets/Adilet.png" alt="Brother Adilet">
+                    <h3>Brother Adilet</h3>
+                    <p>Adilet is adventurous and full of energy. He loves sports and often encourages me to try new activities, making our time together exciting.</p>
+                </div>
+                <div class="family-member">
+                    <img src="/assets/Erdaulet.jpg" alt="Brother Erdaulet">
+                    <h3>Brother Erdaulet</h3>
+                    <p>Erdaulet is my closest friend and partner in all fun activities. We share many memories together, from gaming to outdoor adventures, always supporting each other.</p>
+                </div>
+                <div class="family-member">
+                    <img src="/assets/Nabi.png" alt="Brother Nabi">
+                    <h3>Brother Nabi</h3>
+                    <p>Nabi is incredibly creative and artistic. He often inspires me with his unique ideas and perspectives, making our family gatherings more fun and memorable.</p>
+                </div>
+                <div class="family-member">
+                    <img src="/assets/Alibek.png" alt="Brother Alibek">
+                    <h3>Brother Alibek</h3>
+                    <p>Alibek is the jokester of the family. He has a great sense of humor and knows how to lighten the mood, making every moment spent with him enjoyable.</p>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="sideBar">
+            <div class="side-quote">
+                <b id="word"></b>
+            </div>
+        </nav>
+    </section>
+    <script>
+        window.onload = function() {
+            generate();
+        };
+        function generate() {
+            var arr = [
+                'The only true wisdom is in knowing you know nothing.',
+                'Gott ist tot. Gott bleibt tot. Und wir haben ihn getötet.',
+                'Немає любові до життя без відчаю в житті.',
+                'لقد كان في وسعي أن أقضي على كل يهود العالم ولكني تركت بعضا منهم لتعرفوا لماذا كنت أبيدهم',
+                'La muerte es la solución a todos los problemas. No hay problema para nadie.',
+                'Solo uno sciocco impara dai propri errori.',
+                'IwbnfouevcmsiehwvudbqvGovernment.'
+            ];
+            var index = Math.floor(Math.random() * arr.length);
+            document.getElementById('word').innerHTML = arr[index];
+        }
+    </script> 
+</body>
+</html>

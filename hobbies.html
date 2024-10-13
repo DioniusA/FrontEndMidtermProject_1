@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Portfolio: Aldiyar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="container">
+        <div class="pseudoHeader"></div>
+        <header class="sideHeader">
+            <h1>
+                I'm <a href="index.html">Dinislam Aldiyar</a> — <br>
+                a computer science 
+                student and a novice 
+                front-end developer.
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="family.html">Family</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li class="active-menu"><a href="hobbies.html">Hobbies<span> ✼ </span></a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="mobileHeader">
+            <p>
+                <a href="index.html">Dinislam Aldiyar</a> <br>
+                _<span>hobbies</span>_
+            </p>
+            <div class="mobile-menu">
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">&#9776;</label>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="family.html">Family</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="hobbies.html">Hobbies</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>            
+        </div>            
+        <div class="hobbies">
+            <h2>Hobbies and Inspirations</h2>
+            <div class="hobbies-grid">
+                <div class="hobby-item">
+                    <img src="/assets/horsing.png" alt="Hobbyhorsing" class="hobby-img">
+                    <h3>Hobbyhorsing</h3>
+                    <p>I was inspired by Winston Churchill, he was the best hobbyhorse rider of his time.</p>
+                </div>
+                <div class="hobby-item">
+                    <img src="/assets/paint.png" alt="Painting" class="hobby-img">
+                    <h3>Painting</h3>
+                    <p>I was inspired by an Austrian artist, he had a very tragic story.</p>
+                </div>
+                <div class="hobby-item">
+                    <img src="/assets/box.png" alt="Boxing" class="hobby-img">
+                    <h3>Boxing</h3>
+                    <p>I was inspired by Stephen Hawking; he beat Muhammad Ali in a fair fight in 1977, and Muhammad ended his career because of him.</p>
+                </div>
+                <div class="hobby-item">
+                    <img src="/assets/skating.png" alt="Skating" class="hobby-img">
+                    <h3>Skating</h3>
+                    <p>I was inspired by Nick Vujicic, who won gold in Beijing in 2022 at the Women's Olympics, even beating Miho Takagi.</p>
+                </div>
+                <div class="hobby-item">
+                    <img src="/assets/front.png" alt="Front End" class="hobby-img">
+                    <h3>Front End</h3>
+                    <p>I was inspired by Nursat Bakyt, who created several brilliant websites, even Jesus Christ recognized his skills.</p>
+                </div>
+                <div class="hobby-item">
+                    <img src="/assets/fast.png" alt="Fast Programming" class="hobby-img">
+                    <h3>Fast Programming</h3>
+                    <p>I was inspired by Joseph Stalin; he practically "shot" Elon Musk at the last Olympics.</p>
+                </div>
+            </div>
+        </div>        
+        <nav class="sideBar">
+            <div class="side-quote">
+                <b id="word"></b>
+            </div>
+        </nav>
+    </section>
+    <script>
+        window.onload = function() {
+            generate();
+        };
+        function generate() {
+            var arr = [
+                'The only true wisdom is in knowing you know nothing.',
+                'Gott ist tot. Gott bleibt tot. Und wir haben ihn getötet.',
+                'Немає любові до життя без відчаю в житті.',
+                'لقد كان في وسعي أن أقضي على كل يهود العالم ولكني تركت بعضا منهم لتعرفوا لماذا كنت أبيدهم',
+                'La muerte es la solución a todos los problemas. No hay problema para nadie.',
+                'Solo uno sciocco impara dai propri errori.',
+                'IwbnfouevcmsiehwvudbqvGovernment.'
+            ];
+            var index = Math.floor(Math.random() * arr.length);
+            document.getElementById('word').innerHTML = arr[index];
+        }
+    </script> 
+</body>
+</html>
